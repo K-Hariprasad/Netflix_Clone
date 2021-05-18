@@ -21,7 +21,7 @@ function Header() {
     return (
         <div className="header_body">
             <nav className={`navbar ${navbar&&"nav_bg"}`}>
-                <img className="nav_logo" src={netlix_logo} alt="netflix-logo"/>
+                <img className="nav_logo" src={netlix_logo} alt="netflix-logo"/> 
                 <img className="nav_avatar" src={netlix_avatar} alt="netflix-avatar"/>
             </nav>
         </div>
