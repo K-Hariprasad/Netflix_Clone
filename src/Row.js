@@ -9,7 +9,6 @@ function Row({title, fetchUrl, handleSelection}) {
 
     useEffect(()=>{
         axios.get(fetchUrl).then(res=>{
-            console.table(res.data.results)
             setMovies(res.data.results)
         })
     },[fetchUrl])

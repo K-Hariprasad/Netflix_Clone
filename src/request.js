@@ -6,5 +6,7 @@ const requests = {
     fetchTopRatedIndianMovies : `${base_url}/movie/top_rated?api_key=${API_KEY}&region=IN`,
     fetchPopularMovies : `${base_url}/movie/popular?api_key=${API_KEY}&region=IN`,
 }
-
+export const fetchSimilarMovies = (movie_id) => {
+    return `${base_url}/movie/${movie_id}/similar?api_key=${API_KEY}`
+}
 export default requests
